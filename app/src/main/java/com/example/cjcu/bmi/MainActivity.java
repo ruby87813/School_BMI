@@ -1,5 +1,6 @@
 package com.example.cjcu.bmi;
 
+import android.content.Intent;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -45,6 +46,9 @@ public class MainActivity extends AppCompatActivity {
                 .setPositiveButton("確定",null)
                 .setNegativeButton("Cancel",null)
                 .show();
-        
+
+        Intent intemt = new Intent(this,ResultActivity.class);
+
+        startActivity(intemt);
     }
 }
